@@ -74,7 +74,9 @@ function todoApp (state = initialState, action) {
         )
       }
     }
-    when {} -> {} // ignore unknown actions
+    when {} -> { // ignore unknown actions
+      return state
+    }
   }
 }
 ```
